@@ -30,7 +30,7 @@ function NavBar() {
             <a href="#projects">My projects</a>
           </li>
           <li className="nav-item">
-            <a href="#contact">Contacto</a>
+            <a href="#contact">Contact</a>
           </li>
 
         </ul>
