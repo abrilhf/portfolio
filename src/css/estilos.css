@@ -1,0 +1,826 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+
+.section {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(20px);
+  }
+  
+  .section.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .indicators {
+    position: fixed;
+    top: 50%;
+    right: 44px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background: transparent;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #302f2f;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .indicator.active {
+    background-color: #ffffff;
+  }
+
+.nav{
+    width: 80px;
+    height: 100vh;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    z-index: 9999;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0; 
+    background-color: #e6eb96; /* Ajusta según tus necesidades */
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ajusta según tus necesidades */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.nav-list.show {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+    height: 100vh;
+    width: 45vw;
+}
+
+.nav li {
+    margin-right: 0;
+    margin-bottom: 66px;
+    background: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:20px ;
+}
+
+.burger-menu {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 27px;
+}
+
+.burger-menu .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #e6eb96;
+    margin: 6px 0;
+}
+
+.nav-item a{
+    color: rgb(0, 0, 0);
+    background-color: #e6eb96;
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    color: #818851;
+}
+
+.close-button button{
+    background-color: #e6eb96;
+    border: none;
+}
+
+.close-button button i{
+    background-color: #e6eb96;
+}
+
+
+.home > div div h1{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 3.5rem;
+}
+
+
+h1 > .web{
+    color: #706BFF;
+}
+
+h1 .abril{
+    display: flex;
+}
+
+h1 > span .letraL{
+    font-size: 0;
+    background-image: url(../../img/l.svg);
+    width: 30%;
+    height: 59px;
+    background-size: 165px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position-y: 11px;
+}
+
+.grafica-bienvenida {
+    background-image: url(../../img/grafica-bievenida.png);
+    height: 856px;
+    width: 54%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -120px;
+}
+
+section div.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 120px;
+    margin-left: 54px;
+}
+
+section div.mother{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+section div div p{
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+section div div a{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E3F08E;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+section div div a:hover{
+    color: #818851;
+}
+
+section div div .services{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+section div div .d-grid a{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+section div div .d-grid a.design{
+    background-color: #E2E991;
+}
+
+section div div .d-grid a:last-child{
+    border: 2px solid #FDA4E0;
+    color: #FDA4E0;
+    margin-left: 20px;
+}
+
+.contact{
+    padding: 120px;
+}
+
+.contact h1{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    font-family: 'Poppins';
+    color: white;
+    font-size: 7.5rem;
+    text-transform: uppercase;
+    margin-top: 120px;
+    margin-left: 236px;
+}
+
+.contact p{
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 30px;
+    font-size: 18px;
+    margin-left: 236px;
+}
+
+.contact a{
+    margin-left: 236px;
+    color: white;
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+
+.contact a:hover{
+    color: #E2E991;
+}
+
+h1 > span.letraN{
+    font-size: 0;
+    background-image: url(../../img/n.svg);
+    width: 167px;
+    height: 125px;
+    background-size: 167px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position-y: 24px;
+    background-position-x: 1px;
+}
+
+
+.item{
+    min-height: 40rem;
+    min-width: 30rem;
+    padding: 40px;
+}
+
+.item img {
+    width: 100%;
+    height: 30%;
+    border-radius: 2rem;
+    pointer-events: none;
+    object-fit: cover;
+    position: relative;
+    opacity: 0.8;
+}
+
+
+.inner-carousel{
+    display: flex;
+}
+
+.carousel{
+    cursor: grab;
+    overflow: hidden;
+}
+
+.projectMalenaDetail .description a,
+.projectLumiereDetail .description a,
+.projectAlquimiaDetail .description a{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.projectMalenaDetail i.bi-github,
+.projectLumiereDetail i.bi-github,
+.projectAlquimiaDetail i.bi-github{
+    font-size: 30px;
+    color: white;
+    margin-right: 10px;
+} 
+
+/* PROYECTOSSSSSSSSSSSS */
+.projectBarto{
+    background: url(../../img/barto/portada-home.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.projectLumiere{
+    background: url(../../img/lumiere/portada-home.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.projectMalena{
+    background: url(../../img/malena/portada-home.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.projectAlquimia{
+    background: url(../../img/alquimia/portada-home.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.projectBarto .pageTop,
+.projectMalena .pageTop,
+.projectLumiere .pageTop,
+.projectAlquimia .pageTop{
+    display: flex;
+    position: absolute;
+    left: 94px;
+    justify-content: space-between;
+    width: 94%;
+    background: transparent;
+    color: white;
+    align-items: center;
+    top: 36px;
+    border-top: 1px solid;
+    padding-top: 12px;
+}
+
+.projectBarto .pageTop h2,
+.projectMalena .pageTop h2,
+.projectLumiere .pageTop h2,
+.projectAlquimia .pageTop h2,
+.projectBarto .pageTop p,
+.projectMalena .pageTop p,
+.projectLumiere .pageTop p,
+.projectAlquimia .pageTop p{
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.bartoDescription{
+    position: absolute;
+    bottom: 80px;
+    left: 130px;
+    color: white;
+    background: transparent;
+}
+
+.bartoDescription h3{
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-size: 5.5rem;
+}
+
+.bartoDescription p{
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 4px;
+}
+
+.projectBartoDetail i.bi-arrow-left-short,
+.projectMalenaDetail i.bi-arrow-left-short,
+.projectLumiereDetail i.bi-arrow-left-short,
+.projectAlquimiaDetail i.bi-arrow-left-short{
+    position: fixed;
+    bottom: 80px;
+    right: 70px;
+    background: white;
+    border-radius: 120px;
+    font-size: 50px;
+    padding: 6px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #706BFF;
+    box-shadow: 0px 0px 20px rgb(136 131 225 / 86%);
+}
+
+.projectBarto i,
+.projectMalena i,
+.projectLumiere i,
+.projectAlquimia i{
+    position: absolute;
+    bottom: 80px;
+    right: 130px;
+    background: white;
+    border-radius: 120px;
+    font-size: 50px;
+    padding: 6px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #706BFF;
+}
+
+.bartoDescription .tesis{
+    background-color: #E2E991;
+    width: 110px;
+    padding: 17px;
+    border-radius: 119px;
+    display: flex;
+    text-transform: none;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    color: #302f2f;
+}
+
+.projectBartoDetail > .portada{
+    background: url(../../img/barto/portada-detail.jpg);
+    background-size: cover;
+    height: 40vh;
+}
+
+.projectMalenaDetail > .portada{
+    background: url(../../img/malena/portada-detail.jpg);
+    background-size: cover;
+    height: 40vh;
+}
+
+.projectLumiereDetail > .portada{
+    background: url(../../img/lumiere/portada-home.jpg);
+    background-size: cover;
+    height: 40vh;
+    background-position-y: center;
+}
+
+.projectAlquimiaDetail > .portada{
+    background: url(../../img/alquimia/portada-home.jpg);
+    background-size: cover;
+    height: 40vh;
+    background-position-y: center;
+}
+
+
+.projectBartoDetail article,
+.projectMalenaDetail article,
+.projectLumiereDetail article,
+.projectAlquimiaDetail article{
+    padding: 155px;
+    display: flex;
+    color: white;
+    margin-left: 12.4rem;
+}
+
+.projectBartoDetail article div:last-child,
+.projectMalenaDetail article div:last-child,
+.projectLumiereDetail article div:last-child,
+.projectAlquimiaDetail article div:last-child{
+    width: 50%;
+    margin-left: 120px;
+}
+
+.projectBartoDetail article h4,
+.projectMalenaDetail article h4,
+.projectLumiereDetail article h4,
+.projectAlquimiaDetail article h4{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #706bff78;
+}
+.projectBartoDetail article ul,
+.projectMalenaDetail article ul,
+.projectLumiereDetail article ul,
+.projectAlquimiaDetail article ul{
+    padding-left: 1rem; 
+}
+
+.projectBartoDetail article ul li,
+.projectMalenaDetail article ul li,
+.projectLumiereDetail article ul li,
+.projectAlquimiaDetail article ul li,
+.projectBartoDetail article p,
+.projectMalenaDetail article p,
+.projectLumiereDetail article p,
+.projectAlquimiaDetail article p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+.projectBartoDetail div img,
+.projectMalenaDetail div img,
+.projectLumiereDetail div img,
+.projectAlquimiaDetail div img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px){
+    .grafica-bienvenida {
+        height: 730px;
+        width: 54%;
+        background-position-x: -98px;
+    }
+
+    .projectBarto .pageTop, .projectMalena .pageTop, .projectLumiere .pageTop, .projectAlquimia .pageTop{
+        width: 91%;
+    }
+
+    .projectBarto,
+    .projectLumiere,
+    .projectAlquimia{
+        background-position-x: center;
+    }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    section div.mother{
+        flex-direction: column-reverse;
+    }
+
+    .grafica-bienvenida {
+        height: 856px;
+        width: 100%;
+        background-position-x: center;
+        background-size: 570px;
+    }
+
+    section div div a {
+        margin-bottom: 34px;
+    }
+
+    section div.content{
+        padding: 0;
+        width: 74%;
+    }
+
+    .nav{
+        height: 6%;
+        background-color: transparent;
+    }
+
+    .projectBarto .pageTop, .projectMalena .pageTop, .projectLumiere .pageTop, .projectAlquimia .pageTop {
+        width: 87%;
+    }
+
+    .projectBarto,
+    .projectLumiere,
+    .projectAlquimia{
+        background-position-x: center;
+    }
+
+    .projectBarto i, .projectMalena i, .projectLumiere i, .projectAlquimia i {
+        bottom: 96px;
+        right: 42px;
+    }
+
+    .contact{
+        padding: 0;
+    }
+
+    .contact h1,
+    .contact p,
+    .contact a {
+        margin-left: 146px;
+    }
+
+    .projectBartoDetail article, .projectMalenaDetail article, .projectLumiereDetail article, .projectAlquimiaDetail article {
+        margin-left: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 427px){
+    section div.mother{
+        flex-direction: column-reverse;
+    }
+
+    .grafica-bienvenida {
+        height: 856px;
+        width: 100%;
+        background-position-x: center;
+        background-size: 488px;
+    }
+
+    section div div a {
+        margin-bottom: 34px;
+    }
+
+    section div.content{
+        padding: 0;
+        width: 74%;
+    }
+
+    .nav{
+        height: 6%;
+        background-color: transparent;
+    }
+
+    .projectBarto .pageTop, .projectMalena .pageTop, .projectLumiere .pageTop, .projectAlquimia .pageTop{
+        width: 84%;
+    }
+
+    .indicators {
+        right: 40px;
+    }
+
+    .contact{
+        padding: 36px;
+        height: 100vh;
+    }
+
+    .contact p,
+    .contact a{
+        margin-left: 20px;
+    }
+
+
+    .contact h1{
+        font-size: 3.5rem;
+        margin-left: 20px;
+        margin-top: 274px;
+        align-items: center;
+    }
+
+    h1 > span.letraN {
+        width: 84px;
+        height: 94px;
+        background-size: 81px;
+    }
+
+
+    .projectBarto i, .projectMalena i, .projectLumiere i, .projectAlquimia i {
+        bottom: 166px;
+        right: 118px;
+        font-size: 44px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .bartoDescription {
+        bottom: 39px;
+        left: 96px;
+    }
+
+    .projectBarto,
+    .projectLumiere,
+    .projectAlquimia{
+        background-position-x: center;
+    }
+
+    .projectBartoDetail article, .projectMalenaDetail article, .projectLumiereDetail article, .projectAlquimiaDetail article {
+        padding: 124px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .nav{
+        height: 6%;
+        background-color: transparent;
+    }
+
+    section div.mother{
+        flex-direction: column-reverse;
+    }
+
+    .grafica-bienvenida {
+        height: 856px;
+        width: 100%;
+        background-position-x: 8px;
+        background-size: 380px;
+    }
+
+    section div div a {
+        margin-bottom: 34px;
+    }
+
+    .indicators {
+        right: 36px;
+    }
+
+    .projectBarto .pageTop, .projectMalena .pageTop, .projectLumiere .pageTop, .projectAlquimia .pageTop {
+        left: 24px;
+        width: 86%;
+    }    
+
+    .projectBarto i{
+        bottom: 138px;
+        right: 54px;
+        width: 86px;
+        height: 86px;
+    }
+
+    .projectMalena i, .projectLumiere i{
+        bottom: 26px;
+        right: 54px;
+        width: 86px;
+        height: 86px;
+    }
+
+    .projectAlquimia i {
+        bottom: 19px;
+        right: 38px;
+        width: 86px;
+        height: 86px;
+    }
+
+    .bartoDescription h3.titleAlquimia {
+        font-size: 4.5rem;
+    }
+
+    .projectBarto,
+    .projectLumiere,
+    .projectAlquimia{
+        background-position-x: center;
+    }
+    
+    .bartoDescription {
+        left: 20px;
+        bottom: 14px;
+    }
+
+    section div.content{
+        width: 90%;
+        padding: 0;
+        margin-left: 5px;
+    }
+    
+
+    section div div p{
+        font-size: 16px;
+    }
+
+    .section.active {
+        transform: translateY(0);
+        background-color: #ffffff;
+    }
+    
+    .indicators {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .indicator.active {
+        background-color: #ffffff;
+      }
+
+      .section-container {
+        overflow: auto;
+      }
+
+
+      .projectBartoDetail article, .projectMalenaDetail article, .projectLumiereDetail article, .projectAlquimiaDetail article{
+        margin-left: 0;
+        padding: 40px;
+        flex-direction: column;
+      }
+
+      .projectBartoDetail article div:last-child, .projectMalenaDetail article div:last-child, .projectLumiereDetail article div:last-child, .projectAlquimiaDetail article div:last-child {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .projectAlquimiaDetail > .portada,
+    .projectBartoDetail > .portada,
+    .projectLumiereDetail > .portada{
+        background-position-x: center;
+    }
+
+    .contact{
+        padding: 0;
+        height: 100vh;
+    }
+
+    .contact p,
+    .contact a{
+        margin-left: 20px;
+    }
+
+
+    .contact h1{
+        font-size: 3.5rem;
+        margin-left: 20px;
+        margin-top: 274px;
+        align-items: center;
+    }
+
+    h1 > span.letraN {
+        width: 84px;
+        height: 94px;
+        background-size: 81px;
+    }
+
+}
