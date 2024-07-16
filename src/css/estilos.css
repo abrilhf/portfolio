@@ -1035,5 +1035,207 @@ p{
     .projectAlquimiaDetail .descrip .info-alquimista ul:nth-child(2) {
         margin-left: 0;
     }
+}
 
+@media screen and (max-width: 414px) {
+    .sobre-mi .description div p {
+        width: 100%;
+    }
+
+    .sobre-mi {
+        height: 150vh;
+    }
+
+    .transition{
+        margin-top: 0;
+    }
+
+    .projects .barto ion-icon{
+        color: white;
+        background: #5c5470;
+        font-size: 80px;
+        position: relative;
+        border-radius: 66px 0px 0px 66px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        left: 333px;
+        bottom: 434px;
+    }
+    .projects .lumiere ion-icon{
+        left: 333px;
+        bottom: 176px;
+    }
+    
+    .projects .tarjetas ion-icon{
+        left: 333px;
+        bottom: 266px;
+    }
+    
+    .projects .depily ion-icon {
+        left: 333px;
+        top: -226px;
+    }
+    
+    .projects .malena {
+        padding-left: 0;
+        padding-right: 0;
+        height: 115vh;
+    }
+    
+    .projects .malena ion-icon{
+        left: 333px;
+        bottom: 282px;
+    }
+    .projects .alquimia ion-icon{
+        left: 333px;
+        bottom: 370px;
+    }
+
+    .contacto {
+        height: 61vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .home {
+        background-image: url(../../img/mobile/home-back.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .projects .barto ion-icon{
+        color: white;
+        background: #5c5470;
+        font-size: 80px;
+        position: relative;
+        border-radius: 66px 0px 0px 66px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        left: 295px;
+        bottom: 434px;
+    }
+    .projects .lumiere ion-icon{
+        left: 295px;
+        bottom: 176px;
+    }
+    
+    .projects .tarjetas ion-icon{
+        left: 295px;
+        bottom: 266px;
+    }
+    
+    .projects .depily ion-icon {
+        left: 295px;
+        top: -226px;
+    }
+    
+    .projects .malena {
+        padding-left: 0;
+        padding-right: 0;
+        height: 115vh;
+    }
+    
+    .projects .malena ion-icon{
+        left: 295px;
+        bottom: 282px;
+    }
+    .projects .alquimia ion-icon{
+        left: 295px;
+        bottom: 370px;
+    }
+
+    .contacto {
+        height: 68vh;
+    }
+
+    .projects .barto {
+        height: 106vh;
+    }
+
+    .projects .malena {
+        height: 130vh;
+    }
+
+    .projects .alquimia {
+        height: 72vh;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .projects .barto ion-icon{
+        color: white;
+        background: #5c5470;
+        font-size: 80px;
+        position: relative;
+        border-radius: 66px 0px 0px 66px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        left: 281px;
+        bottom: 434px;
+    }
+    .projects .lumiere ion-icon{
+        left: 281px;
+        bottom: 176px;
+    }
+    .projects .tarjetas ion-icon{
+        left: 281px;
+        bottom: 266px;
+    }
+    .projects .depily ion-icon {
+        left: 281px;
+        top: -226px;
+    }
+    .projects .malena ion-icon{
+        left: 281px;
+        bottom: 282px;
+    }
+    .projects .alquimia ion-icon{
+        left: 281px;
+        bottom: 370px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .projects .barto ion-icon{
+        color: white;
+        background: #5c5470;
+        font-size: 80px;
+        position: relative;
+        border-radius: 66px 0px 0px 66px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        left: 240px;
+        bottom: 434px;
+    }
+    .projects .lumiere ion-icon{
+        left: 240px;
+        bottom: 176px;
+    }
+    .projects .tarjetas ion-icon{
+        left: 240px;
+        bottom: 266px;
+    }
+    .projects .depily ion-icon {
+        left: 240px;
+        top: -226px;
+    }
+    .projects .malena ion-icon{
+        left: 240px;
+        bottom: 282px;
+    }
+    .projects .alquimia ion-icon{
+        left: 240px;
+        bottom: 370px;
+    }
+
+    .contacto .info {
+        margin-left: 12px;
+    }
+
+    .contacto {
+        height: 68vh;
+        background-position: center 9px;
+        background-size: 350px;
+    }
 }
