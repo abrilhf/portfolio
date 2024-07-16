@@ -1,0 +1,51 @@
+
+
+  section.parallax {
+    position: relative;
+  }
+  
+
+  .progress {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--accent);
+    bottom: 100px;
+    width: 100%;
+  }
+  
+  .parallax {
+    overflow: hidden;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  
+  .parallax .scroller {
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  
+  .parallax span {
+    display: flex;
+    margin-right: 30px;
+    width: 100%;
+  }
+  
+  .parallax span img{
+    width: 80px;
+    margin-right: 40px;
+  }
+
+  .transicion{
+    margin-top: 104px;
+    width: 100%;
+  }

@@ -1,0 +1,1039 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño según necesites */
+    animation: spin 2s linear infinite; /* Animación de rotación */
+    margin-left: 40px;
+  }
+  
+  .logo-image {
+    width: 100%;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .name {
+    font-size: 124px;
+    margin-top: 16px;
+    font-family: "Barrio", system-ui;
+    color: #5C5470;
+  }
+
+  .content {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .content.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home{
+    background-image: url(../../img/desktop-back.svg);
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.sobre-mi h1{
+    font-family: "Barrio", system-ui;
+    color: #5C5470;
+    font-size: 120px;
+    background-color: transparent;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+}
+
+.sobre-mi .description{
+    display: flex;
+    align-items: center;
+    background: transparent;
+}
+
+.sobre-mi .description div{
+    width: 1058px;
+    background: transparent;
+}
+
+.sobre-mi .description img{
+    background-color: #5C5470;
+    padding: 40px;
+    border-radius: 74px;
+    z-index: 1000;
+    position: relative;
+}
+
+.sobre-mi .description div p{
+    position: relative;
+    top: -67px;
+    background: #5c5470;
+    color: white;
+    /* margin: 0px; */
+    padding-top: 20px;
+    height: 143px;
+    border-radius: 0 0 74px 74px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.sobre-mi .description div p span{
+    background-image: url(../../img/home-icon.svg);
+    display: block;
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.sobre-mi .description p.me{
+    margin-left: 88px;
+}
+
+.sobre-mi{
+    background-image: url(../../img/description-back.svg);
+    background-size: 119pc;
+    height: 110vh;
+    width: 100%;
+    background-position-y: 98px;
+    background-repeat: no-repeat;
+    padding: 220px;
+}
+
+
+.projects .barto{
+    padding: 66px;
+    background: url(../../img/barto/barto-back.svg);
+    background-repeat: no-repeat;
+    height: 120vh;
+    margin-top: 120px;
+}
+
+.projects .lumiere{
+    height: 120vh;
+    margin-top: 120px;
+}
+
+.projects .malena{
+    padding-left: 66px;
+    padding-right: 66px;
+    padding-top: 220px;
+    height: 172vh;
+    margin-top: 120px;
+    /* background-color: #FAD08F; */
+}
+
+.projects .tarjetas,
+.projects .depily{
+    padding-top: 720px;
+    height: 172vh;
+    margin-top: 120px;
+}
+
+
+.projects .alquimia{
+    padding-left: 66px;
+    padding-right: 66px;
+    padding-top: 220px;
+    height: 172vh;
+    margin-top: 120px;
+    background-color: #E7DECA;
+    border-radius: 48px;
+}
+
+.projects .barto h2,
+.projects .barto p,
+.projects .lumiere h2,
+.projects .lumiere p,
+.projects .malena h2,
+.projects .malena p,
+.projects .alquimia h2,
+.projects .alquimia p,
+.projects .tarjetas h2,
+.projects .tarjetas p,
+.projects .depily h2,
+.projects .depily p,
+.contacto h2{
+    background-color: transparent;
+    text-align: center;
+}
+
+.projects .barto h2,
+.projects .lumiere h2,
+.projects .malena h2,
+.projects .alquimia h2,
+.projects .tarjetas h2,
+.projects .depily h2,
+.contacto h2{
+    font-family: "Barrio", system-ui;
+    color: #5C5470;
+    font-size: 120px;
+}
+
+
+.projects .barto ion-icon{
+    color: white;
+    background: transparent;
+    font-size: 80px;
+    position: relative;
+    bottom: 762px;
+    left: 1757px;
+}
+
+.projects .lumiere a,
+.projects .barto a,
+.projects .malena a,
+.projects .alquimia a,
+.projects .tarjetas a,
+.projects .depily a{
+    background-color: transparent;
+}
+
+
+.projects .malena ion-icon{
+    color: white;
+    background: #5c5470;
+    font-size: 80px;
+    position: relative;
+    bottom: 756px;
+    left: 1757px;
+    border-radius: 66px 0px 0px 66px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projects .lumiere ion-icon{
+    color: white;
+    background: #5c5470;
+    font-size: 80px;
+    position: relative;
+    bottom: 756px;
+    left: 1823px;
+    border-radius: 66px 0px 0px 66px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projects .alquimia ion-icon{
+    color: white;
+    background: #5c5470;
+    font-size: 80px;
+    position: relative;
+    bottom: 1400px;
+    left: 1757px;
+    border-radius: 66px 0px 0px 66px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projects .tarjetas ion-icon{
+    color: white;
+    background: #5c5470;
+    font-size: 80px;
+    position: relative;
+    bottom: 1400px;
+    left: 1823px;
+    border-radius: 66px 0px 0px 66px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projects .depily ion-icon{
+    color: white;
+    background: #5c5470;
+    font-size: 80px;
+    position: relative;
+    bottom: 732px;
+    left: 1823px;
+    border-radius: 66px 0px 0px 66px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projects .malena img,
+.projects .malena .box,
+.projects .alquimia img,
+.projects .alquimia .box,
+.projects .tarjetas img,
+.projects .tarjetas .box,
+.projects .depily img,
+.projects .depily .box{
+    background: transparent;
+}
+
+.projects .depily .box{
+    margin-top: 60px;
+}
+
+.projects .lumiere .box,
+.projects .alquimia .box{
+    display: flex;
+    justify-content: center;
+}
+
+.projects .barto .boxes,
+.projects .barto .boxes img{
+    background: transparent;
+    margin-top: 24px;
+}
+
+
+.contacto{
+    padding-top: 720px;
+    height: 130vh;
+    margin-top: 120px;
+    background: url(../../img/contacto-back.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contacto .info{
+    margin-top: 140px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -6pc;
+}
+
+.contacto .info a{
+    display: flex;
+    align-items: center;
+    color: #2a2a2a;
+    text-decoration: none;
+}
+
+.contacto .info ion-icon{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contacto .info p{
+    margin-bottom: 0;
+}
+
+
+/* -------------------------------------------------- */
+
+.projectBartoDetail > .portada{    
+    background: url(../../img/barto/portada-detail.jpg);
+    background-size: cover;
+    height: 40vh;
+}
+
+.projectLumiereDetail > .portada{
+    background: url(../../img/lumiere/portada-detail.jpg);
+    background-size: cover;
+    height: 40vh;
+    background-position: center;
+}
+
+.projectMalenaDetail > .portada{
+    background: url(../../img/malena/portada-detail.jpg);
+    background-size: cover;
+    height: 40vh;
+    background-position: center;
+}
+
+.projectAlquimiaDetail > .portada{
+    background: url(../../img/alquimia/portada-detail.jpg);
+    background-size: cover;
+    height: 40vh;
+    background-position: center;
+}
+
+.projectTarjetasDetail > .portada{
+    background: url(../../img/tarjetas/portada-detail.jpg);
+    background-size: cover;
+    height: 40vh;
+    background-position: center;
+}
+
+.projectDepilyDetail > .portada{
+    background: url(../../img/depily/portada-detail.jpg);
+    background-size: cover;
+    height: 40vh;
+    background-position: center;
+}
+
+
+.projectBartoDetail article,
+.projectLumiereDetail article,
+.projectMalenaDetail article,
+.projectAlquimiaDetail article,
+.projectTarjetasDetail article,
+.projectDepilyDetail article{
+    padding: 200px;
+    margin-left: 330px;
+}
+
+
+.projectBartoDetail .descrip,
+.projectLumiereDetail .descrip,
+.projectMalenaDetail .descrip,
+.projectAlquimiaDetail .descrip,
+.projectTarjetasDetail .descrip,
+.projectDepilyDetail .descrip{
+    padding: 120px;
+}
+
+.projectLumiereDetail .des2,
+.projectMalenaDetail .des2{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.projectBartoDetail .descrip h2,
+.projectLumiereDetail .descrip h2,
+.projectMalenaDetail .descrip h2,
+.projectAlquimiaDetail .descrip h2,
+.projectTarjetasDetail .descrip h2,
+.projectDepilyDetail .descrip h2{
+    margin-bottom: 20px;
+}
+
+.projectLumiereDetail .descrip p,
+.projectMalenaDetail .descrip p,
+.projectAlquimiaDetail .descrip p,
+.projectTarjetasDetail .descrip p,
+.projectDepilyDetail .descrip p{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.projectAlquimiaDetail .descrip .info-alquimista{
+    display: flex;
+}
+
+.projectAlquimiaDetail .descrip .info-alquimista ul:nth-child(2){
+    margin-left: 100px;
+}
+
+.projectAlquimiaDetail .descrip .info-alquimista ul li{
+    list-style-type: circle;
+}
+
+.projectBartoDetail i.bi-arrow-left-short{
+    position: fixed;
+    bottom: 80px;
+    right: 70px;
+    background: white;
+    border-radius: 120px;
+    font-size: 50px;
+    padding: 6px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc00;
+}
+
+.projectLumiereDetail .descrip a{
+    display: flex;
+    align-items: center;
+    color: #7f1d1d;
+}
+
+.projectMalenaDetail .descrip a{
+    display: flex;
+    align-items: center;
+    color: #ca5235;
+}
+
+.projectAlquimiaDetail .descrip a{
+    display: flex;
+    align-items: center;
+    color: #8ca239;
+}
+
+.projectTarjetasDetail .descrip .links{
+    display: flex;
+    align-items: center;
+    color: #896aa5;
+    font-size: 18px;
+}
+
+.projectDepilyDetail .descrip .links{
+    display: flex;
+    align-items: center;
+    color: #7d1a6d;
+    font-size: 18px;
+}
+
+.projectTarjetasDetail .descrip .links a,
+.projectDepilyDetail .descrip .links a{
+    margin-right: 50px;
+}
+
+.projectTarjetasDetail .descrip .links a i,
+.projectDepilyDetail .descrip .links a i{
+    margin-right: 10px;
+}
+
+.projectLumiereDetail .descrip a i,
+.projectMalenaDetail .descrip a i,
+.projectAlquimiaDetail .descrip a i{
+    margin-right: 20px;
+}
+
+.projectLumiereDetail i.bi-arrow-left-short{
+    position: fixed;
+    bottom: 80px;
+    right: 70px;
+    background: white;
+    border-radius: 120px;
+    font-size: 50px;
+    padding: 6px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b11010;
+}
+
+.projectMalenaDetail i.bi-arrow-left-short{
+    position: fixed;
+    bottom: 80px;
+    right: 70px;
+    background: white;
+    border-radius: 120px;
+    font-size: 50px;
+    padding: 6px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ca5235;
+}
+
+.projectAlquimiaDetail i.bi-arrow-left-short{
+    position: fixed;
+    bottom: 80px;
+    right: 70px;
+    background: white;
+    border-radius: 120px;
+    font-size: 50px;
+    padding: 6px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8ca239;
+}
+
+.projectTarjetasDetail i.bi-arrow-left-short{
+    position: fixed;
+    bottom: 80px;
+    right: 70px;
+    background: white;
+    border-radius: 120px;
+    font-size: 50px;
+    padding: 6px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a3a2db;
+}
+
+.projectDepilyDetail i.bi-arrow-left-short{
+    position: fixed;
+    bottom: 80px;
+    right: 70px;
+    background: white;
+    border-radius: 120px;
+    font-size: 50px;
+    padding: 6px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a3a2db;
+}
+
+.projectDepilyDetail .text-xl,
+.projectDepilyDetail .descrip .text-2xl{
+    text-decoration: #7d1a6d;
+    text-decoration-line: underline;
+}
+
+.projectTarjetasDetail .text-xl,
+.projectTarjetasDetail .descrip .text-2xl{
+    text-decoration: #896aa5;
+    text-decoration-line: underline;
+}
+
+.projectLumiereDetail .text-xl,
+.projectLumiereDetail .descrip .text-2xl{
+    text-decoration: #7f1d1d;
+    text-decoration-line: underline;
+}
+
+.projectMalenaDetail .text-xl,
+.projectMalenaDetail .descrip .text-2xl{
+    text-decoration: #ca5235;
+    text-decoration-line: underline;
+}
+
+.projectAlquimiaDetail .text-xl,
+.projectAlquimiaDetail .descrip .text-2xl{
+    text-decoration: #8ca239;
+    text-decoration-line: underline;
+}
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    .home{
+        background-image: url(../../img/laptop/home-back.svg);
+        background-repeat: no-repeat;
+    }
+
+    .projects .lumiere ion-icon{
+        left: 942px;
+        bottom: 340px;
+    }
+    
+    .projects .tarjetas ion-icon{
+        left: 942px;
+        top: -345px;
+    }
+    
+    .projects .depily ion-icon {
+        left: 942px;
+        top: -452px;
+    }
+
+    .projects .alquimia ion-icon{
+        left: 942px;
+        bottom: 560px;
+    }
+
+    .projects .barto ion-icon{
+        color: white;
+        background: #5c5470;
+        font-size: 80px;
+        position: relative;
+        border-radius: 66px 0px 0px 66px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        left: 942px;
+        bottom: 382px;
+    }
+
+    .projects .malena ion-icon{
+        left: 942px;
+        bottom: 528px;
+    }
+
+    .projects .barto,
+    .projects .alquimia,
+    .projects .malena{
+        padding: 0;
+    }
+
+    .projects .barto .boxes img {
+        margin-top: 68px;
+    }
+
+    .projects .alquimia{
+        height: 140vh;
+        padding-top: 32px;
+    }
+
+    .projects .lumiere {
+        height: 112vh;
+    }
+
+    .projects .malena{
+        height: 150vh;
+    }
+
+    .projects .tarjetas, .projects .depily {
+        padding-top: 184px;
+        height: 134vh;
+        margin-top: 120px;
+    }
+
+    .contacto {
+        padding-top: 294px;
+        height: 86vh;
+        margin-top: 12px;
+        background: url(../../img/mobile/contacto-back.svg);
+        background-repeat: no-repeat;
+        background-size: 1024px;
+        background-position: center -4px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto .info{
+        margin-left: 0;
+    }
+
+    .projectBartoDetail article, .projectLumiereDetail article, .projectMalenaDetail article, .projectAlquimiaDetail article, .projectTarjetasDetail article, .projectDepilyDetail article {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 427px){
+
+    .home{
+        background-image: url(../../img/tablet/home-back.svg);
+        background-repeat: no-repeat;
+    }
+
+    .sobre-mi {
+        background-image: url(../../img/description-back.svg);
+        background-size: 119pc;
+        height: 140vh;
+        width: 100%;
+        background-position: -95px 236px;
+        padding: 72px;
+    }
+    .sobre-mi .description p.me{
+        background: transparent;
+    }
+
+    .sobre-mi .description{
+        flex-direction: column;
+    }
+
+    .sobre-mi .description div {
+        width: 66%;
+    }
+
+
+    .transicion{
+        margin-top: 0px;
+    }
+
+
+    .projects .lumiere ion-icon{
+        left: 688px;
+        bottom: 340px;
+    }
+    
+    .projects .tarjetas ion-icon{
+        left: 688px;
+        top: -345px;
+    }
+    
+    .projects .depily ion-icon {
+        left: 688px;
+        top: -345px;
+    }
+
+    .projects .alquimia ion-icon{
+        left: 688px;
+        bottom: 560px;
+    }
+
+    .projects .barto ion-icon{
+        color: white;
+        background: #5c5470;
+        font-size: 80px;
+        position: relative;
+        border-radius: 66px 0px 0px 66px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        left: 688px;
+        bottom: 382px;
+    }
+
+    .projects .malena ion-icon{
+        left: 688px;
+        bottom: 466px;
+    }
+
+    .projects .barto,
+    .projects .alquimia,
+    .projects .malena{
+        padding: 0;
+    }
+
+    .projects .barto .boxes img {
+        margin-top: 68px;
+    }
+
+    .projects .barto .boxes .bartoReplace{
+        content: url(../../img/tablet/barto-mock.png);
+    }
+
+    .projects .alquimia{
+        height: 110vh;
+        padding-top: 32px;
+    }
+
+    .projects .lumiere {
+        height: 94vh;
+    }
+
+    .projects .malena{
+        height: 150vh;
+    }
+
+    .projects .tarjetas, .projects .depily {
+        padding-top: 184px;
+        height: 110vh;
+        margin-top: 120px;
+    }
+
+    .contacto {
+        padding-top: 220px;
+        height: 84vh;
+        margin-top: 110px;
+        background: url(../../img/mobile/contacto-back.svg);
+        background-repeat: no-repeat;
+        background-size: 768px;
+        background-position: center -4px;
+    }
+
+    .contacto .info{
+        margin-left: 0;
+    }
+
+    .projectBartoDetail article, .projectLumiereDetail article, .projectMalenaDetail article, .projectAlquimiaDetail article, .projectTarjetasDetail article, .projectDepilyDetail article {
+        padding: 146px;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    .home{
+        background-image: url(../../img/mobile/home-back.svg);
+        background-repeat: no-repeat;
+    }
+
+    .sobre-mi{
+        background-image: url(../../img/mobile/sobremi-back.svg);
+        background-size: 38pc;
+        background-position-x: -86px;
+        background-position-y: 153px;
+    }
+
+    .projects .barto{
+        background-image: url(../../img/mobile/barto-back.svg);
+        padding: 0;
+        height: 95vh;
+    }
+
+    .projects .barto .boxes .bartoReplace{
+        content: url(../../img/mobile/barto-mock.svg);
+    }
+
+    
+    .projects .barto h2{
+        padding-top: 38px;
+    }
+    
+    .projects .barto ion-icon{
+        color: white;
+        background: #5c5470;
+        font-size: 80px;
+        position: relative;
+        border-radius: 66px 0px 0px 66px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        left: 345px;
+        bottom: 434px;
+    }
+    
+    .projects .lumiere {
+        height: 44vh;
+    }
+    
+    
+    .projects .lumiere ion-icon{
+        left: 345px;
+        bottom: 176px;
+    }
+    
+    .projects .tarjetas ion-icon{
+        left: 345px;
+        bottom: 266px;
+    }
+    
+    .projects .depily ion-icon {
+        left: 345px;
+        top: -226px;
+    }
+    
+    .projects .malena {
+        padding-left: 0;
+        padding-right: 0;
+        height: 115vh;
+    }
+    
+    .projects .malena ion-icon{
+        left: 345px;
+        bottom: 282px;
+    }
+    
+    .projects .alquimia {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 58px;
+        height: 72vh;
+        margin-top: 120px;
+    }
+    
+    .projects .alquimia .boxes .alquimiaReplace{
+        content: url(../../img/mobile/alquimia-mock.png);
+    }
+    
+    .projects .alquimia ion-icon{
+        left: 345px;
+        bottom: 370px;
+    }
+    
+    .projects .tarjetas, .projects .depily {
+        padding-top: 120px;
+        height: 72vh;
+        margin-top: 120px;
+    }
+
+    .sobre-mi{
+        padding: 64px;
+    }
+    
+    .sobre-mi h1,
+    .projects .barto h2, 
+    .projects .lumiere h2, 
+    .projects .malena h2, 
+    .projects .alquimia h2,
+    .projects .tarjetas h2,
+    .projects .depily h2, 
+    .contacto h2{
+        font-size: 72px;
+    }
+    
+    .sobre-mi .description div p {
+        height: 174px;
+        width: 297px;
+    }
+    
+    .sobre-mi .description p.me{
+        margin-left: 0;
+    }
+    
+    .sobre-mi .description div{
+        width: 100%;
+    }
+    
+    .sobre-mi .description {
+        flex-direction: column;
+    }
+    
+
+    .contacto{
+        height: 58vh;
+        margin-top: 0;
+        padding-top: 120px;
+        background: url(../../img/mobile/contacto-back.svg);
+        background-repeat: no-repeat;
+    }
+
+    .contacto .info {
+        margin-top: 60px;
+        margin-left: 40px;
+        flex-direction: column;
+    }
+
+    .contacto .info p,
+    .contacto .info a{
+        margin-bottom: 20px;
+    }
+
+    .loader-container{
+        flex-direction: column-reverse;
+    }
+
+
+    /*-----------DETALLES------------- */
+
+    .projectBartoDetail > .portada,
+    .projectAlquimiaDetail > .portada,
+    .projectDepilyDetail > .portada,
+    .projectLumiereDetail > .portada,
+    .projectTarjetasDetail > .portada {
+        background-position: center;
+    }
+
+    .projectMalenaDetail > .portada{
+        background-position: left;
+    }
+
+    .projectBartoDetail article, .projectLumiereDetail article, .projectMalenaDetail article, .projectAlquimiaDetail article, .projectTarjetasDetail article, .projectDepilyDetail article{
+        padding: 0;
+        margin: 54px;
+    }
+
+    .projectBartoDetail .descrip, .projectLumiereDetail .descrip, .projectMalenaDetail .descrip, .projectAlquimiaDetail .descrip, .projectTarjetasDetail .descrip, .projectDepilyDetail .descrip {
+        padding: 40px;
+    }
+
+    .projectDepilyDetail .descrip .links,
+    .projectTarjetasDetail .descrip .links,
+    .projectAlquimiaDetail .descrip .links,
+    .projectLumiereDetail .descrip .links,
+    .projectMalenaDetail .descrip .links,
+    .projectBartoDetail .descrip .links {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .projectAlquimiaDetail .descrip .info-alquimista {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .projectAlquimiaDetail .descrip .info-alquimista ul p{
+        text-decoration: #8ca239;
+        text-decoration-line: underline;
+    }
+
+    .projectAlquimiaDetail .descrip .info-alquimista ul:nth-child(2) {
+        margin-left: 0;
+    }
+
+}
